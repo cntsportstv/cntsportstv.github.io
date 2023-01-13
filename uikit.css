@@ -188,7 +188,6 @@ pre,
 address,
 fieldset,
 figure {
-  margin: 0 0 20px 0;
 }
 /* Add margin if adjacent element */
 * + p,
