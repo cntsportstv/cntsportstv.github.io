@@ -1,0 +1,668 @@
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELEVISION</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.js"></script>
+
+    <!-- Kit´s code fontawesome -->
+    <script src="https://kit.fontawesome.com/d0e2d731d5.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/master.js"></script>
+
+</head>
+
+<body class="uk-margin-bottom">
+
+    <nav class="uk-navbar-container uk-margin-small-bottom uk-sticky-fixed" uk-navbar uk-sticky>
+        <div class="uk-navbar-left">
+            <img class="logo" src="img/hoo_tv_logo.svg" alt="hoo_tv_logo">
+        </div>
+        <div class="uk-navbar-right">
+            <a class="uk-link-reset" href="http://action_search">
+                <i class="fa-solid fa-magnifying-glass menu"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="uk-container" uk-filter="target: .js-filter">
+        <ul class="uk-subnav uk-subnav-pill">
+            <li class="uk-active" uk-filter-control><a href="#">Todos</a></li>
+            <li uk-filter-control="[data-color='entretenimiento']"><a href="#">Entretenimiento</a></li>
+            <li uk-filter-control="[data-color='noticias']"><a href="#">Noticias</a></li>
+            <li uk-filter-control="[data-color='cultura']"><a href="#">Cultura</a></li>
+            <li uk-filter-control="[data-color='musica']"><a href="#">Música</a></li>
+            <li uk-filter-control="[data-color='kids']"><a href="#">Kids</a></li>
+            <li uk-filter-control="[data-color='religion']"><a href="#">Religión</a></li>
+            <li uk-filter-control="[data-color='deportes']"><a href="#">Deportes</a></li>
+            <li uk-filter-control="[data-color='peliculas']"><a href="#">Peliculas</a></li>
+            <li uk-filter-control="[data-color='otro']"><a href="#">Otro</a></li>
+        </ul>
+        <ul class="js-filter uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-5@m uk-grid-small" uk-grid>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch53">
+                    <img class="cover" src="img/logos/telemundo.jpg" alt="telemundo_logo">
+                </a>
+                <p class="uk-text-center">Telemundo</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch54">
+                    <img class="cover" src="img/logos/las_estrellas.jpg" alt="las_estrellas_logo">
+                </a>
+                <p class="uk-text-center">Las Estrellas</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch55">
+                    <img class="cover" src="img/logos/canal_5.jpg" alt="canal_5_logo">
+                </a>
+                <p class="uk-text-center">Canal 5</p>
+            </li>
+
+            <li data-color="noticias">
+                <a href="go:ch56">
+                    <img class="cover" src="img/logos/foro_tv.jpg" alt="foro_tv_logo">
+                </a>
+                <p class="uk-text-center">Foro TV</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch57">
+                    <img class="cover" src="img/logos/azteca_siete.jpg" alt="azteca_siete_logo">
+                </a>
+                <p class="uk-text-center">Azteca Siete</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch25">
+                    <img class="cover" src="img/logos/lo_mejor_de_la_liga_mx.jpg" alt="lo_mejor_de_la_liga_mx_logo">
+                </a>
+                <p class="uk-text-center">Liga MX</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch52">
+                    <img class="cover" src="img/logos/cine_club.jpg" alt="cine_club_logo">
+                </a>
+                <p class="uk-text-center">Cine Club</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch58">
+                    <img class="cover" src="img/logos/movistar_la_liga.jpg" alt="movistar_la_liga_logo">
+                </a>
+                <p class="uk-text-center">Movistar | La Liga</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch59">
+                    <img class="cover" src="img/logos/bandamax.jpg" alt="bandamaz_logo">
+                </a>
+                <p class="uk-text-center">Bandamax</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch60">
+                    <img class="cover" src="img/logos/bitme.jpg" alt="bitme_logo">
+                </a>
+                <p class="uk-text-center">Bitme</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch61">
+                    <img class="cover" src="img/logos/cartoonito.jpg" alt="cartoonito_logo">
+                </a>
+                <p class="uk-text-center">Cartoonito</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch62">
+                    <img class="cover" src="img/logos/cartoon_network.jpg" alt="cartoon_network_logo">
+                </a>
+                <p class="uk-text-center">Cartoon Network</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch63">
+                    <img class="cover" src="img/logos/unimas.jpg" alt="unimas_logo">
+                </a>
+                <p class="uk-text-center">Unimas</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch64">
+                    <img class="cover" src="img/logos/amc.jpg" alt="amc_logo">
+                </a>
+                <p class="uk-text-center">AMC</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch65">
+                    <img class="cover" src="img/logos/fx.jpg" alt="fx_logo">
+                </a>
+                <p class="uk-text-center">FX</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch66">
+                    <img class="cover" src="img/logos/a_plus.jpg" alt="a_plus_logo">
+                </a>
+                <p class="uk-text-center">a+</p>
+            </li>
+
+            <li data-color="noticias">
+                <a href="go:ch67">
+                    <img class="cover" src="img/logos/adn_40.jpg" alt="adn_40_logo">
+                </a>
+                <p class="uk-text-center">ADN 40</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch68">
+                    <img class="cover" src="img/logos/antena_3.png" alt="antena_3_logo">
+                </a>
+                <p class="uk-text-center">Antena 3</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch69">
+                    <img class="cover" src="img/logos/axn.jpg" alt="axn_logo">
+                </a>
+                <p class="uk-text-center">AXN</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch70">
+                    <img class="cover" src="img/logos/azteca_uno.jpg" alt="azteca_uno_logo">
+                </a>
+                <p class="uk-text-center">Azteca UNO</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch71">
+                    <img class="cover" src="img/logos/baby_first.jpg" alt="baby_first_logo">
+                </a>
+                <p class="uk-text-center">Baby First</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch72">
+                    <img class="cover" src="img/logos/ae.jpg" alt="ae_logo">
+                </a>
+                <p class="uk-text-center">A&E</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch73">
+                    <img class="cover" src="img/logos/animal_planet.jpg" alt="animal_planet_logo">
+                </a>
+                <p class="uk-text-center">Animal Planet</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch74">
+                    <img class="cover" src="img/logos/cinecalidad.jpg" alt="cinecalidad_logo">
+                </a>
+                <p class="uk-text-center">Cinecalidad</p>
+            </li>
+
+            <li data-color="noticias">
+                <a href="go:ch75">
+                    <img class="cover" src="img/logos/cnn_espanol.jpg" alt="ccn_espanol_logo">
+                </a>
+                <p class="uk-text-center">CNN Español</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch76">
+                    <img class="cover" src="img/logos/discovery_channel.jpg" alt="discovery_channel_logo">
+                </a>
+                <p class="uk-text-center">Discovery Channel</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch77">
+                    <img class="cover" src="img/logos/discovery_hh.jpg" alt="discovery_hh_logo">
+                </a>
+                <p class="uk-text-center">Discovery H&H</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch78">
+                    <img class="cover" src="img/logos/discovery_kids.jpg" alt="discovery_kids_logo">
+                </a>
+                <p class="uk-text-center">Discovery Kids</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch79">
+                    <img class="cover" src="img/logos/disney_channel.jpg" alt="disney_channel_logo">
+                </a>
+                <p class="uk-text-center">Disney Channel</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch80">
+                    <img class="cover" src="img/logos/disney_jr.jpg" alt="disney_jr_logo">
+                </a>
+                <p class="uk-text-center">Disney JR</p>
+            </li>
+
+            <li data-color="noticias">
+                <a href="go:ch81">
+                    <img class="cover" src="img/logos/excelsior_tv.jpg" alt="excelsiort_v_logo">
+                </a>
+                <p class="uk-text-center">Excelsior TV</p>
+            </li>
+
+            <li data-color="noticias">
+                <a href="go:ch82">
+                    <img class="cover" src="img/logos/formula_noticias.jpg" alt="formula_noticias_logo">
+                </a>
+                <p class="uk-text-center">Formula Noticias</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch83">
+                    <img class="cover" src="img/logos/star_channel.jpg" alt="star_channel_logo">
+                </a>
+                <p class="uk-text-center">Star Channel</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch84">
+                    <img class="cover" src="img/logos/golden.jpg" alt="golden_logo">
+                </a>
+                <p class="uk-text-center">Golden</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch85">
+                    <img class="cover" src="img/logos/golden_edge.jpg" alt="golden_edge_logo">
+                </a>
+                <p class="uk-text-center">Golden Edge</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch86">
+                    <img class="cover" src="img/logos/history_channel.jpg" alt="history_channel_logo">
+                </a>
+                <p class="uk-text-center">History Channel</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch87">
+                    <img class="cover" src="img/logos/imagen_tv.jpg" alt="imagen_tv_logo">
+                </a>
+                <p class="uk-text-center">Imagen TV</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch88">
+                    <img class="cover" src="img/logos/investigation_discovery.jpg" alt="id_logo">
+                </a>
+                <p class="uk-text-center">ID</p>
+            </li>
+
+            <li data-color="noticias">
+                <a href="go:ch89">
+                    <img class="cover" src="img/logos/milenio_television.jpg" alt="milenio_television_logo">
+                </a>
+                <p class="uk-text-center">Milenio Television</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch90">
+                    <img class="cover" src="img/logos/nat_geo.jpg" alt="nat_geo_logo">
+                </a>
+                <p class="uk-text-center">Nat Geo</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch91">
+                    <img class="cover" src="img/logos/teen_nick.jpg" alt="teen_nick_logo">
+                </a>
+                <p class="uk-text-center">TeenNick</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch92">
+                    <img class="cover" src="img/logos/nick_jr.jpg" alt="nick_jr_logo">
+                </a>
+                <p class="uk-text-center">Nick JR</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch93">
+                    <img class="cover" src="img/logos/nick.jpg" alt="nick_logo">
+                </a>
+                <p class="uk-text-center">Nick</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch94">
+                    <img class="cover" src="img/logos/nick_music.jpg" alt="nick_ music_logo">
+                </a>
+                <p class="uk-text-center">Nick Music</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch95">
+                    <img class="cover" src="img/logos/paramount.jpg" alt="paramount_logo">
+                </a>
+                <p class="uk-text-center">Paramount</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch96">
+                    <img class="cover" src="img/logos/studio_universal.jpg" alt="studio_universal_logo">
+                </a>
+                <p class="uk-text-center">Studio Universal</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch97">
+                    <img class="cover" src="img/logos/tlc.jpg" alt="tlc_logo">
+                </a>
+                <p class="uk-text-center">TLC</p>
+            </li>
+
+            <li data-color="kids">
+                <a href="go:ch98">
+                    <img class="cover" src="img/logos/tooncast.jpg" alt="tooncast_logo">
+                </a>
+                <p class="uk-text-center">Tooncast</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch99">
+                    <img class="cover" src="img/logos/sony_channel.jpg" alt="sony_channel_logo">
+                </a>
+                <p class="uk-text-center">Sony Channel</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch100">
+                    <img class="cover" src="img/logos/warner.jpg" alt="warner_logo">
+                </a>
+                <p class="uk-text-center">Warner</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch101">
+                    <img class="cover" src="img/logos/multimedios.jpg" alt="multimedios_logo">
+                </a>
+                <p class="uk-text-center">Multimedios Tv</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch102">
+                    <img class="cover" src="img/logos/distrito_comedia.jpg" alt="distrito_comedia_logo">
+                </a>
+                <p class="uk-text-center">Distrito Comedia</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch103">
+                    <img class="cover" src="img/logos/nueve.jpg" alt="distrito_comedia_logo">
+                </a>
+                <p class="uk-text-center">Canal Nueve</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch104">
+                    <img class="cover" src="img/logos/comedy_central.jpg" alt="comedy_central_logo">
+                </a>
+                <p class="uk-text-center">Comedy Central</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch105">
+                    <img class="cover" src="img/logos/el_gourmet.jpg" alt="el_gourmet_logo">
+                </a>
+                <p class="uk-text-center">El Gourmet</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch106">
+                    <img class="cover" src="img/logos/food_network.jpg" alt="food_network_logo">
+                </a>
+                <p class="uk-text-center">Food Network</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch107">
+                    <img class="cover" src="img/logos/hola_tv.jpg" alt="hola_tv_logo">
+                </a>
+                <p class="uk-text-center">Hola TV</p>
+            </li>
+
+            <li data-color="cultura">
+                <a href="go:ch108">
+                    <img class="cover" src="img/logos/ingenio_tv.jpg" alt="ingenio_tv_logo">
+                </a>
+                <p class="uk-text-center">Ingenio TV</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch109">
+                    <img class="cover" src="img/logos/lifetime.jpg" alt="lifetime_logo">
+                </a>
+                <p class="uk-text-center">Lifetime</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch110">
+                    <img class="cover" src="img/logos/mtv.jpg" alt="mtv_logo">
+                </a>
+                <p class="uk-text-center">MTV</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch111">
+                    <img class="cover" src="img/logos/mtv_live.jpg" alt="mtv_live_logo">
+                </a>
+                <p class="uk-text-center">MTV Live</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch112">
+                    <img class="cover" src="img/logos/space.jpg" alt="space_logo">
+                </a>
+                <p class="uk-text-center">Space</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch113">
+                    <img class="cover" src="img/logos/syfy.jpg" alt="syfy_logo">
+                </a>
+                <p class="uk-text-center">SYFY</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch114">
+                    <img class="cover" src="img/logos/telehit.jpg" alt="telehit_logo">
+                </a>
+                <p class="uk-text-center">Telehit</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch115">
+                    <img class="cover" src="img/logos/tnt.jpg" alt="tnt_logo">
+                </a>
+                <p class="uk-text-center">TNT</p>
+            </li>
+
+            <li data-color="peliculas">
+                <a href="go:ch116">
+                    <img class="cover" src="img/logos/tnt_series.jpg" alt="tnt_logo">
+                </a>
+                <p class="uk-text-center">TNT Series</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch117">
+                    <img class="cover" src="img/logos/tru_tv.jpg" alt="tru_tv_logo">
+                </a>
+                <p class="uk-text-center">Tru TV</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch118">
+                    <img class="cover" src="img/logos/unicable.jpg" alt="unicable_logo">
+                </a>
+                <p class="uk-text-center">Unicable</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch119">
+                    <img class="cover" src="img/logos/vh1.jpg" alt="vh1_logo">
+                </a>
+                <p class="uk-text-center">VH1</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch120">
+                    <img class="cover" src="img/logos/mtv_hits.jpg" alt="mtv_hits_logo">
+                </a>
+                <p class="uk-text-center">MTV Hits</p>
+            </li>
+
+            <li data-color="entretenimiento">
+                <a href="go:ch121">
+                    <img class="cover" src="img/logos/e.jpg" alt="e_logo">
+                </a>
+                <p class="uk-text-center">E!</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch122">
+                    <img class="cover" src="img/logos/mtv_classic.jpg" alt="mtv_classic_logo">
+                </a>
+                <p class="uk-text-center">MTV Classic</p>
+            </li>
+
+            <li data-color="musica">
+                <a href="go:ch123">
+                    <img class="cover" src="img/logos/teleritmo.jpg" alt="teleritmo_logo">
+                </a>
+                <p class="uk-text-center">Teleritmo</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch124">
+                    <img class="cover" src="img/logos/tudn.jpg" alt="tudn_logo">
+                </a>
+                <p class="uk-text-center">TUDN</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch125">
+                    <img class="cover" src="img/logos/espn_deportes.jpg" alt="espn_deportes_logo">
+                </a>
+                <p class="uk-text-center">ESPN Deportes</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch126">
+                    <img class="cover" src="img/logos/fox_deportes.jpg" alt="fox_deportes_logo">
+                </a>
+                <p class="uk-text-center">FOX Deportes</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch127">
+                    <img class="cover" src="img/logos/directv_sports.jpg" alt="directv_sports_logo">
+                </a>
+                <p class="uk-text-center">Directv Sports</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch128">
+                    <img class="cover" src="img/logos/tnt_sports.jpg" alt="tnt_sports_logo">
+                </a>
+                <p class="uk-text-center">TNT Sports</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch129">
+                    <img class="cover" src="img/logos/fox_sports_2.jpg" alt="fox_sports_2_logo">
+                </a>
+                <p class="uk-text-center">FOX Sports 2</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch130">
+                    <img class="cover" src="img/logos/espn_2.jpg" alt="espn_2_logo">
+                </a>
+                <p class="uk-text-center">ESPN 2</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch131">
+                    <img class="cover" src="img/logos/bein_la_liga.jpg" alt="bein_la_liga_logo">
+                </a>
+                <p class="uk-text-center">Bein La Liga</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch132">
+                    <img class="cover" src="img/logos/bein_sports_espanol.jpg" alt="bein_sports_espanol_logo">
+                </a>
+                <p class="uk-text-center">Bein Sports en Español</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch150">
+                    <img class="cover" src="img/logos/fox_sports_premium.jpg" alt="fox_sports_logo">
+                </a>
+                <p class="uk-text-center">FOX Sports Premium</p>
+            </li>
+
+            <li data-color="deportes">
+                <a href="go:ch151">
+                    <img class="cover" src="img/logos/gol_tv.jpg" alt="gol_tv_logo">
+                </a>
+                <p class="uk-text-center">GOL TV</p>
+            </li>
+
+            <li data-color="premium">
+                <a href="go:ch152">
+                    <img class="cover" src="img/logos/hbo.jpg" alt="hbo_logo">
+                </a>
+                <p class="uk-text-center">HBO</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <div>
+        <a class="uk-link-reset arriba" href="#" uk-scroll>
+            <i class="fa-solid fa-chevron-up arriba-icon"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>
