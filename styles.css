@@ -55,11 +55,11 @@ a{
 
 .fa-solid.menu{
     font-size: 18px;
-    color: #01EB78;
+    color: red;
 }
 
 .fa-solid.slide{
-    color: #01EB78;
+    color: red;
 }
 
 .logo{
@@ -85,7 +85,7 @@ a{
 }
 
 .color-text{
-    color: #01EB78;
+    color: red;
 }
 
 .arriba{
