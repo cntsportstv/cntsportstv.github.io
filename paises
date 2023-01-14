@@ -58,7 +58,7 @@
 	          <li uk-filter-control="[data-color='colombia']"><a href="#">COLOMBIA</a></li>
             <li uk-filter-control="[data-color='mexico']"><a href="#">MÉXICO</a></li>
             <li uk-filter-control="[data-color='chile']"><a href="#">CHILE</a></li>
-            <li uk-filter-control="[data-color='uruguay']"><a href="#">URUGUAY</a></li>
+            <li uk-filter-control="[data-color='uruguay']"><a href="https://tv.vera.com.uy/envivo">URUGUAY</a></li>
             <li uk-filter-control="[data-color='paraguay']"><a href="#">PARAGUAY</a></li>
             <li uk-filter-control="[data-color='honduras']"><a href="#">HONDURAS</a></li>
             <li uk-filter-control="[data-color='nicaragua']"><a href="#">NICARAGUA</a></li>
@@ -932,11 +932,7 @@
                 <p class="uk-text-center"></p>
             </li>
 	    
-	    
-	    
-	    
-	    
-	    
+
 	    
 	    
 	    
@@ -948,11 +944,138 @@
 	    
 	    
 	    <li data-color="chile">
+                <a href="go:ch1">
+                    <img class="cover" src="https://i.ibb.co/qsR4wh0/ch1.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch2">
+                    <img class="cover" src="https://i.ibb.co/4tMncdc/ch2.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch3">
+                    <img class="cover" src="https://i.ibb.co/4mp660T/ch3.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch4">
+                    <img class="cover" src="https://i.ibb.co/hZnvXrf/ch4.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch5">
+                    <img class="cover" src="https://i.ibb.co/0sGKgXs/ch5.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch6">
+                    <img class="cover" src="https://i.ibb.co/Tg8J5ms/ch6.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch7">
+                    <img class="cover" src="https://i.ibb.co/0c5Yp0h/ch7.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch8">
+                    <img class="cover" src="https://i.ibb.co/vhSg6B9/ch8.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch9">
+                    <img class="cover" src="https://i.ibb.co/qpQMWVv/ch9.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch10">
+                    <img class="cover" src="https://i.ibb.co/BzdDDVq/ch10.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch11">
+                    <img class="cover" src="https://i.ibb.co/gz6zQxv/ch11.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch12">
+                    <img class="cover" src="https://i.ibb.co/0CCy4nv/ch12.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch13">
+                    <img class="cover" src="https://i.ibb.co/S0C24Nb/ch13.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch14">
+                    <img class="cover" src="https://i.ibb.co/8Nqyx3J/ch14.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch15">
+                    <img class="cover" src="https://i.ibb.co/Zdw6xQs/ch15.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    <li data-color="chile">
+                <a href="go:ch16">
+                    <img class="cover" src="https://i.ibb.co/nPMCKpS/ch16.png" alt="">
+                </a>
+                <p class="uk-text-center"></p>
+            </li>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <li data-color="paraguay">
                 <a href="canales">
                     <img class="cover" src="fotos" alt="">
                 </a>
                 <p class="uk-text-center"></p>
             </li>
+
 	    
 	
             
