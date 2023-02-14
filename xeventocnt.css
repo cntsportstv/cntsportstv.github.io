@@ -7,7 +7,7 @@ body{margin:0;padding:0;background-color:#000}*{text-decoration:none}
 
 .conte1 .conte2 .conte3{background-color:#1a2026;width:100%;min-height:70px;display:grid;grid-template-columns:60px 1fr;cursor:pointer;text-align:left;margin-top:2px;transition:.5s}
 
-.hora{position:relative;display:flex;;color:#ff0000;align-items:center;left:10px;justify-content:center}
+.hora{position:relative;display:flex;;color:#ff0000;align-items:center;left:6px;justify-content:center}
 
 .conte1 .conte2 .conte3:hover{background-color:#018e39}
 
