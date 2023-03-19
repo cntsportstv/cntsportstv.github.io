@@ -3,7 +3,7 @@
 
 body{margin:0;padding:0;background-color:#000}*{text-decoration:none}
 
-.cont1{min-height:70px;max-width:1200px;width:100%;margin:auto;margin-bottom:50px;text-align:center;box-shadow:0 0 18px rgba(175,174,174,.3)}
+.cont1{min-height:70px;max-width:1200px;width:100%;margin:auto;margin-bottom:10px;text-align:center;box-shadow:0 0 18px rgba(175,174,174,.3)}
 
 .cont1 .cont2 .cont3{background-color:#1a2026;width:100%;min-height:55px;display:grid;grid-template-columns:60px 1fr;cursor:pointer;text-align:left;margin-top:2px;transition:.5s}
 
