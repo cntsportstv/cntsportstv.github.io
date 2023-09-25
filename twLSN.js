@@ -1,6 +1,6 @@
 var twLSN = [
-'tokowhatsapp.blogspot.com',
-'toko-whatsapp.blogspot.com',
+'https://www.cntstream.xyz/',
+'https://www.cntstream.xyz/',
 'jasa-design.web.id',
 'www.jasa-design.web.id',
 ];
