@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TELEVISION</title>
+
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cntsportstv.github.io/uikit.css" />
@@ -35,14 +35,11 @@
 
     <nav class="uk-navbar-container uk-margin-small-bottom uk-sticky-fixed" uk-navbar uk-sticky>
         <div class="uk-navbar-left">
-             <a href="go:inicio"><img class="logo" src="https://i.ibb.co/LdWgw70/logom90.png" alt=""></a>
+             <a href="go:inicio"><img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP1Mmw43SyC4FDTjDW6X85ElrUduWJxnT_smWzDmwsLidQhpgJyG4M4HIZr_Yi5azKyCQs0gcyl2Zd4jDB82-G8ABBuFOEMV2nAhH7l9IHmwH8L8pWl-_VwgLhW06A0Wy8gHoNX9TcqiqgJfr5SMMo60BYrDSJ6K9-k_3ue7s4GGAO-4YXePZrNP6kRQc/s16000/logom90.png" alt=""></a>
         </div>
         <div class="uk-navbar-right">
            <a class="uk-link-reset" href="http://action_share">
                 <i class="fa-solid fa-share-nodes menu"></i>
-            </a>
-            <a class="uk-link-reset" href="http://action_search">
-                <i class="fa-solid fa-magnifying-glass menu"></i>
             </a>
             <a class="uk-link-reset" href="http://action_exit">
                 <i class="fa-solid fa-right-from-bracket" style="color: red"></i>
@@ -65,7 +62,7 @@
 		'width' : 320,
 		'params' : {}
 	};
-	document.write('<scr' + 'ipt type="text/javascript" src="//www.profitablecreativeformat.com/31d2636be15fa469389b794711c51a23/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/31d2636be15fa469389b794711c51a23/invoke.js"></scr' + 'ipt>');
 </script>
 </center><br>
 <!-- BANNER CUADRADO -->
@@ -78,7 +75,7 @@
 
            <li data-color="entretenimiento1">
                 <a href="go:oka0">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
                 <p class="uk-text-center">C0NT3NID0 24/7</p>
             </li>
@@ -87,55 +84,52 @@
 
             <li data-color="entretenimiento1">
                 <a href="go:oka1">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
-                <p class="uk-text-center">3NTR3T3NIMI3NT0</p>
+                <p class="uk-text-center">CIN3</p>
             </li>
 
             <li data-color="entretenimiento1">
                 <a href="go:oka2">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
                 <p class="uk-text-center">D3P0RT3S</p>
             </li>
 
             <li data-color="entretenimiento1">
                 <a href="go:oka3">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
-                <p class="uk-text-center">CULTUR4L3S</p>
+                <p class="uk-text-center">CULTUR4</p>
             </li>
 
             <li data-color="entretenimiento1">
                 <a href="go:oka4">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
-                <p class="uk-text-center">INF4NTIL3S</p>
+                <p class="uk-text-center">INF4NTIL</p>
             </li>
 
             <li data-color="entretenimiento1">
                 <a href="go:oka5">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
                 <p class="uk-text-center">PR3MIUM</p>
             </li>
 
             <li data-color="entretenimiento1">
                 <a href="go:oka6">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
                 <p class="uk-text-center">N0TICI4S</p>
             </li>
 
             <li data-color="entretenimiento1">
                 <a href="go:oka7">
-                    <img class="cover" src="https://i.ibb.co/GFJ43CX/ore4.png" alt="">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
                 </a>
-                <p class="uk-text-center">MUSIC4L3S</p>
+                <p class="uk-text-center">MUSIC4</p>
             </li>
-
-           
-            
 
 
             
@@ -169,6 +163,8 @@
         </a>
     </div>
 
+
+
 <br>
 <!-- BANNER CUADRADO -->
 <center>
@@ -180,13 +176,105 @@
 		'width' : 300,
 		'params' : {}
 	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformats.com/bfa568637f71decff736540c584a3211/invoke.js"></scr' + 'ipt>');
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.topcreativeformat.com/bfa568637f71decff736540c584a3211/invoke.js"></scr' + 'ipt>');
 </script>
 </center>
 <!-- BANNER CUADRADO -->
 
 </body>
 </html>
+
+<!-- Ventana emergente -->
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="overlay"></div>
+  
+  <div id="popup">
+<br>
+<p style="color: black; text-align: center; background-color: white;">Por favor, espera un momento...</p>
+    <div id="countdown" style="color: black; text-align: center; background-color: white; margin-bottom: 20px;">8</div>
+
+
+
+
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'bfa568637f71decff736540c584a3211',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/bfa568637f71decff736540c584a3211/invoke.js"></scr' + 'ipt>');
+</script>
+
+
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var overlay = document.getElementById('overlay');
+      var popup = document.getElementById('popup');
+      var countdown = document.getElementById('countdown');
+      var timeLeft = 8;
+
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+
+      var countdownInterval = setInterval(function() {
+        timeLeft--;
+        countdown.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+          clearInterval(countdownInterval);
+          overlay.style.display = 'none';
+          popup.style.display = 'none';
+        }
+      }, 1000);
+    });
+  </script>
+
+  <style>
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(2px); /* Efecto de difuminado */
+      z-index: 9999;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px; /* Ancho del cuadro ajustado a 400px */
+      padding: 20px;
+      background-color: white; /* Fondo blanco */
+      border: 1px solid #000000;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      z-index: 10000;
+    }
+
+    #countdown {
+      font-size: 24px;
+      margin-top: 10px;
+      color: black;
+    }
+  </style>
+</body>
+<!-- Ventana emergente -->
+
 
 <!-- Codigo para blokear adblock inicio --> 
 <style type='text/css'>
@@ -209,7 +297,7 @@
 <script type='text/javascript'>
 //<![CDATA[
 // Say Hi to Adblock
-function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://imparteconocimientos.com/recursos/Anti-AdBlocker.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cntsportstv.github.io/xADB.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
 //]]>
 </script>
 <!-- Codigo para blokear adblock fin -->  
