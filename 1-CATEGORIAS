@@ -1,183 +1,56 @@
-<!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cntsportstv.github.io/uikit.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cntsportstv.github.io/styles.css">
+
+    <!-- UIkit JS -->
+    <script src="https://cntsportstv.github.io/uikit.js"></script>
+
+    <!-- Kit´s code fontawesome -->
     <script src="https://kit.fontawesome.com/d0e2d731d5.js" crossorigin="anonymous"></script>
-    <!-- Alternativamente, puedes incluir tu CSS interno dentro de etiquetas style -->
-    <style>
-/* CSS interno */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #121212;
-}
 
-.lista-canales {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    padding: 16px;
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-.limit-responsive {
-    padding: 10px;
-    display: inline-block;
-}
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-.limit-responsive .card {
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, .1);
-    padding: 10px;
-    border-radius: 16px;
-    text-align: center;
-    background: #e3e3e3bd;
-    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s !important;
-    display: inline-block;
-}
+    <!-- JS -->
+    <script src="https://cntsportstv.github.io/master.js"></script>
 
-.limit-responsive .card:hover {
-    box-shadow: 0 24px 40px 0 rgba(32, 53, 90, 0.2);
-    transform: translateX(0px) translateY(-10px) !important;
-}
-
-.limit-responsive .card-image {
-    margin-bottom: 1rem;
-}
-
-.limit-responsive .card-image img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.limit-responsive .card-title {
-    font-size: 1rem;
-    color: #161b30;
-    text-decoration: none;
-    font-weight: 600;
-    margin-bottom: .25rem;
-    display: inline-block;
-}
-
-.skeleton {
-    position: relative;
-}
-
-.skeleton::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-size: 200%;
-    animation: skeleton .8s infinite reverse;
-    border-radius: 16px;
-}
-
-@keyframes skeleton {
-    0% {
-        background-position: -100% 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-/* Diseño responsive */
-@media only screen and (max-width: 800px) {
-    .lista-canales {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .lista-canales {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .lista-canales {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
-}
-/* Reset de estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilos de la barra de navegación */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #121212;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgb(98 98 98);
-    color: #fff;
-    padding: 10px 0;
-    z-index: 1000; /* Asegura que la barra esté por encima del resto del contenido */
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo img {
-    max-height: 40px; /* Ajusta el tamaño del logo según tus necesidades */
-}
-
-.navbar-icons {
-    display: flex;
-}
-
-.navbar-icons a {
-    color: red;
-    font-size: 20px;
-    margin-left: 15px; /* Espacio entre los íconos */
-    text-decoration: none;
-}
-
-.content {
-    /* Ajusta el padding-top según la altura de la barra de navegación para evitar que el contenido se superponga */
-    padding-top: 60px; 
-    /* En un sitio real, este padding-top debe ajustarse según el tamaño de la barra de navegación */
-}
-
-
-    </style>
 </head>
-<body>
 
-<nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="go:inicio"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP1Mmw43SyC4FDTjDW6X85ElrUduWJxnT_smWzDmwsLidQhpgJyG4M4HIZr_Yi5azKyCQs0gcyl2Zd4jDB82-G8ABBuFOEMV2nAhH7l9IHmwH8L8pWl-_VwgLhW06A0Wy8gHoNX9TcqiqgJfr5SMMo60BYrDSJ6K9-k_3ue7s4GGAO-4YXePZrNP6kRQc/s16000/logom90.png" alt="Logo"></a>
-            </div>
-            <div class="navbar-icons">
-                <a href="http://action_share"><i class="fas fa-share-nodes menu"></i></a>
-                <a href="http://action_exit"><i class="fas fa-right-from-bracket"></i></a>
-            </div>
+<body class="uk-margin-bottom">
+
+    <nav class="uk-navbar-container uk-margin-small-bottom uk-sticky-fixed" uk-navbar uk-sticky>
+        <div class="uk-navbar-left">
+             <a href="go:inicio"><img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP1Mmw43SyC4FDTjDW6X85ElrUduWJxnT_smWzDmwsLidQhpgJyG4M4HIZr_Yi5azKyCQs0gcyl2Zd4jDB82-G8ABBuFOEMV2nAhH7l9IHmwH8L8pWl-_VwgLhW06A0Wy8gHoNX9TcqiqgJfr5SMMo60BYrDSJ6K9-k_3ue7s4GGAO-4YXePZrNP6kRQc/s16000/logom90.png" alt=""></a>
+        </div>
+        <div class="uk-navbar-right">
+           <a class="uk-link-reset" href="http://action_share">
+                <i class="fa-solid fa-share-nodes menu"></i>
+            </a>
+
+            <a class="uk-link-reset" href="http://action_exit">
+                <i class="fa-solid fa-right-from-bracket" style="color: red"></i>
+            </a>
         </div>
     </nav>
+    <div class="uk-container" uk-filter="target: .js-filter">
 
-<br><br><br><br>
 
-<marquee style="color:white">ESTA APLICACIÓN ES COMPLETAMENTE GRATIS. ÚNETE A NUESTRO GRUPO DE TELEGRAM Y ENTÉRATE DE FUTURAS NOVEDADES.</marquee>
-
+<marquee style="color:white">ESTA APLICACIÓN ES COMPLETAMENTE GRATIS, SI TE LA VENDIERON, TE ESTAFARON. ÚNETE A NUESTRO CANAL DE TELEGRAM Y ENTÉRATE DE FUTURAS NOVEDADES.</marquee>
 
 <!-- BANNER CUADRADO -->
 <center>
@@ -194,104 +67,465 @@ body {
 </center><br>
 <!-- BANNER CUADRADO -->
 
-<div class="lista-canales">
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka0" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">C0NT3NID0 24/7</span>
+        <ul class="js-filter uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-5@m uk-grid-small" uk-grid>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent1">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">A&E</p>
+            </li>
+
+           
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent4">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4MC</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent5">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4RIR4NG</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent6">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4XN</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent7">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4Z CIN3M4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent8">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4Z C0R4Z0N</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent9">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4Z MUND0</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent10">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4ZT3C4 7</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent11">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">4ZT3C4 UN0</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent12">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">5 MX</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent13">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">C4R4C0L</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent14">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">CIN3C4N4L</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent15">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">CIN3M4X</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent68">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">CIN3 M3XIC0</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent17">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">C0M3DY C3NTR4L</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent63">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">k4N4L D</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent19">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">D P3LICUL4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent20">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">DISTRIT0 C0M3DI4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent21">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">3XTR3M4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent22">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">E!</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent23">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">FX</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent25">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">GLI7Z</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent26">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">H0L4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent71">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">H0RR0RFY</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent27">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">IM4G3N</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent28">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">IS4T</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent65">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">ID34S 5M</p>
+            </li>
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent29">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">3STR3LL4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent30">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">LIF3TIM3</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent31">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">M4S CHIC</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent33">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">MULTIPR3MI3R</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent64">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">N0V3L4S R0M4NC3</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent69">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">N0V3L4S TURC4S</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent70">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">N0V3LISIM4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent35">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">P4NIC0</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent67">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">PL4N3T4 M0VI3</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent36">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">P4R4M0UNT</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent37">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">P4SI0N3S</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent38">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">RCN</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent41">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">S0NY</p>
+            </li>
+
+ <li data-color="entretenimiento1">
+                <a href="go:ent2">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">S0NY N0V3L4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent3">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">S0NY C0MP3T3NCI4</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent42">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">SP4C3</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent43">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">ST4R CH4NN3L</p>
+            </li>
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent46">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">STUDI0 UNIV3RS4L</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent47">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">SY-FY</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent48">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">TBS</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent49">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">TCM</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent50">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">T3L3MUND0</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent51">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">T3L3MUND0 PR</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent66">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">T3RR0R</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent52">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">TNT</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent53">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">TNT S3RI3S</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent54">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">TRUTV</p>
+            </li>
+
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent56">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">UNIM4S</p>
+            </li>
+
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent44">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">UNIC4BL3</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent57">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">UNIV3RS4L</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent58">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">UNIVISI0N</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent61">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">W4RN3R</p>
+            </li>
+
+            <li data-color="entretenimiento1">
+                <a href="go:ent62">
+                    <img class="cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivPVRw_UltlTebU-vKAsVtCG4DlmyIrde031xKyu1toy58AMyHpI5YNeZzON-kV0RraeV4LQXBkxYBgeTr94N_o53d9t8G_qy_rVJwurPhKfRHT2em8PaUpRBJPcsU3OQtI7_0RnazwGaATkug9Iv9X9cnXiOQWlHPzMITyv4ta06BbTNr4Z_79oVzoIY/s16000/base.png" alt="">
+                </a>
+                <p class="uk-text-center">W0W</p>
+            </li>
+
+            
+            
+            
+
+
+        
+            
+
+            
+            
+
+            
+            
+		
+		
+		
+		
+	
+		
+		
+		
+
+        </ul>
+    </div>
+
+    <div>
+        <a class="uk-link-reset arriba" href="#" uk-scroll>
+            <i class="fa-solid fa-chevron-up arriba-icon"></i>
         </a>
     </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka1" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">CIN3</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka2" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">D3P0RT3S</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka3" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">CULTUR4</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka4" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">INF4NTIL</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka5" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">PR3MIUM</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka6" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">N0TICI4S</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    <!-- Cada tarjeta de canal -->
-    <div class="limit-responsive">
-        <a href="go:oka7" class="card">
-            <div class="card-image skeleton">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXAi3sWEyJzjsASJlcsgGhsqVvIM1Dj5ca-6fFkp7p9glinh_OonTuVwF68SA2cZaWWAKEYzIcxlEZeYvZy8eDji-9r_bORnfe4Thq4Ut-dU2GBgyKaJsMCErnojS-we9ikkRdA1xQS3OGudOF3UwrmkPKfpKlSVWbOT710USht0PKJi4y3_5AbgKargs/s16000/base.png" alt="">
-            </div>
-            <span class="card-title skeleton">MUSIC4</span>
-        </a>
-    </div>
-    <!-- Repite la estructura similar para otros canales -->
-
-    
-
-
-
-
-</div>
-
-</body>
-</html>
 
 <br>
 <!-- BANNER CUADRADO -->
@@ -309,120 +543,5 @@ body {
 </center>
 <!-- BANNER CUADRADO -->
 
-<br>
-
-<!-- Ventana emergente -->
-
-<head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <div id="overlay"></div>
-  
-  <div id="popup">
-<br>
-<p style="color: black; text-align: center; background-color: white;">Por favor, espera un momento...</p>
-    <div id="countdown" style="color: black; text-align: center; background-color: white; margin-bottom: 20px;">8</div>
-
-
-
-
-
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'bfa568637f71decff736540c584a3211',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/bfa568637f71decff736540c584a3211/invoke.js"></scr' + 'ipt>');
-</script>
-
-
-  </div>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var overlay = document.getElementById('overlay');
-      var popup = document.getElementById('popup');
-      var countdown = document.getElementById('countdown');
-      var timeLeft = 8;
-
-      overlay.style.display = 'block';
-      popup.style.display = 'block';
-
-      var countdownInterval = setInterval(function() {
-        timeLeft--;
-        countdown.textContent = timeLeft;
-
-        if (timeLeft <= 0) {
-          clearInterval(countdownInterval);
-          overlay.style.display = 'none';
-          popup.style.display = 'none';
-        }
-      }, 1000);
-    });
-  </script>
-
-  <style>
-    #overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(2px); /* Efecto de difuminado */
-      z-index: 9999;
-    }
-
-    #popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px; /* Ancho del cuadro ajustado a 400px */
-      padding: 20px;
-      background-color: white; /* Fondo blanco */
-      border: 1px solid #000000;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      z-index: 10000;
-    }
-
-    #countdown {
-      font-size: 24px;
-      margin-top: 10px;
-      color: black;
-    }
-  </style>
 </body>
-<!-- Ventana emergente -->
-<!-- Codigo para blokear adblock inicio --> 
-<style type='text/css'>
-/* Animation */
-@keyframes fadeInDown{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
-@keyframes rubberBand{from{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,0.75,1)}40%{transform:scale3d(0.75,1.25,1)}50%{transform:scale3d(1.15,0.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scale3d(1,1,1)}}
-/* Say Hi to Adblock */
-#arlinablock{background:rgba(0,0,0,0.65);position:fixed;margin:auto;left:0;right:0;top:0;bottom:0;overflow:auto;z-index:999999;animation:fadeInDown 1s}
-#arlinablock .header{margin:0 0 15px 0}
-#arlinablock .inner{background:#e3482d;color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);text-align:center;width:600px;padding:40px;border-radius:5px;margin:7% auto 2% auto;animation:rubberBand 1s}
-#arlinablock button{padding:10px 20px;border:0;background:rgba(0,0,0,0.15);color:#fff;margin:20px 5px;cursor:pointer;transition:all .3s}
-#arlinablock button:hover{background:rgba(0,0,0,0.35);color:#fff;outline:none}
-#arlinablock button.active,#arlinablock button:hover.active{background:#fff;color:#222;outline:none}
-#arlinablock .fixblock{background:#fff;text-align:left;color:#000;padding:20px;height:250px;overflow:auto;line-height:30px}
-#arlinablock .fixblock div{display:none}
-#arlinablock .fixblock div.active{display:block}
-#arlinablock ol{margin-left:20px}
-@media(max-width:768px){#arlinablock .inner{width:calc(100% - 20px);margin:10px auto;padding:15px}}
-</style>
-<script type='text/javascript'>
-//<![CDATA[
-// Say Hi to Adblock
-function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cntsportstv.github.io/xADB.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
-//]]>
-</script>
-<!-- Codigo para blokear adblock fin -->  
+</html> 
